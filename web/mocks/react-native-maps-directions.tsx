@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useContext } from "react";
-import { MapContext } from "react-native-maps";
+import { useContext, useEffect, useRef } from "react";
+import { MapContext } from "./react-native-maps";
 
 export default function MapViewDirections({
   origin,
@@ -9,12 +9,15 @@ export default function MapViewDirections({
   strokeColor,
   onReady,
 }: any) {
-  const context = useContext(MapContext);
+  const context = useContext(MapContext) as any;
   const directionsRendererRef = useRef<any>(null);
 
   useEffect(() => {
     if (!context) return;
-    const { map, google } = context;
+    const { map, google } = context as {
+      map: any;
+      google: any;
+    };
     if (!map || !google) return;
 
     const directionsService = new google.maps.DirectionsService();

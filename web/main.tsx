@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 // Global Layout
 import RootLayout from "../app/_layout";
@@ -228,7 +228,7 @@ function WebAppShell({ children }: { children: React.ReactNode }) {
 // Router Setup
 function AppRouter() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route element={<RootLayout />}>
           {/* Root/Redirect */}
@@ -277,7 +277,7 @@ function AppRouter() {
           <Route path="/ride/tracking" element={<Tracking />} />
         </Route>
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 

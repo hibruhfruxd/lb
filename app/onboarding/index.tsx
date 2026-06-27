@@ -2,6 +2,9 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useRouter } from "expo-router";
 import React, { useEffect, useRef, useState } from "react";
 import { Dimensions, FlatList, Image, Text, View } from "react-native";
+import onboarding1 from "../../assets/onboarding1.png";
+import onboarding2 from "../../assets/onboarding2.png";
+import onboarding3 from "../../assets/onboarding3.png";
 
 import { useTheme } from "../../theme/ThemeContext";
 
@@ -28,17 +31,17 @@ export default function Onboarding() {
     {
       title: "Welcome to LiftBuddy!",
       desc: "Share rides, save money and travel smart.",
-      image: require("../../assets/onboarding1.png"),
+      image: onboarding1,
     },
     {
       title: "Offer & Get Lifts Easily",
       desc: "Post your ride or find a lift for your route.",
-      image: require("../../assets/onboarding2.png"),
+      image: onboarding2,
     },
     {
       title: "Save Money, Save Time",
       desc: "Cut down travel costs and reduce travel hassle.",
-      image: require("../../assets/onboarding3.png"),
+      image: onboarding3,
     },
   ];
 

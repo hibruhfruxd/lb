@@ -1,6 +1,13 @@
 import React from "react";
-import { ImageBackground, StatusBar, StyleSheet, View } from "react-native";
+import {
+  ImageBackground,
+  type ImageSourcePropType,
+  StatusBar,
+  StyleSheet,
+  View,
+} from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import ecoBg from "../../assets/eco-bg.png";
 import { useTheme } from "../../theme/ThemeContext";
 
 export default function ScreenWrapper({ children }: any) {
@@ -22,7 +29,7 @@ export default function ScreenWrapper({ children }: any) {
 
       {isEco && (
         <ImageBackground
-          source={require("../../assets/eco-bg.png")}
+          source={ecoBg as ImageSourcePropType}
           resizeMode="cover"
           style={StyleSheet.absoluteFillObject}
         >
