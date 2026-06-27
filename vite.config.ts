@@ -18,6 +18,7 @@ export default defineConfig({
       'expo-notifications': path.resolve(__dirname, 'web/mocks/expo-notifications.ts'),
       'expo-updates': path.resolve(__dirname, 'web/mocks/expo-updates.ts'),
       'expo-constants': path.resolve(__dirname, 'web/mocks/expo-constants.ts'),
+      'expo-device': path.resolve(__dirname, 'web/mocks/expo-device.ts'),
       'expo-navigation-bar': path.resolve(__dirname, 'web/mocks/expo-navigation-bar.ts'),
       'expo-linear-gradient': path.resolve(__dirname, 'web/mocks/expo-linear-gradient.tsx'),
       'expo-image': path.resolve(__dirname, 'web/mocks/expo-image.tsx'),
@@ -27,6 +28,9 @@ export default defineConfig({
 
       // Storage
       '@react-native-async-storage/async-storage': path.resolve(__dirname, 'web/mocks/async-storage.ts'),
+
+      // Native auth
+      '@react-native-google-signin/google-signin': path.resolve(__dirname, 'web/mocks/google-signin.ts'),
 
       // Safe area
       'react-native-safe-area-context': path.resolve(__dirname, 'web/mocks/react-native-safe-area-context.tsx'),

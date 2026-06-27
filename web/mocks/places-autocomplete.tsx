@@ -140,7 +140,7 @@ export default function PlacesAutocomplete({
             elevation: 5,
             marginTop: 6,
             maxHeight: 220,
-            overflow: "auto",
+            overflow: "scroll",
             zIndex: 99999,
             position: "absolute",
             top: "100%",

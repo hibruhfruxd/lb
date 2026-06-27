@@ -6,10 +6,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "start": "expo start",
-    "android": "expo run:android",
-    "ios": "expo run:ios",
-    "lint": "expo lint"
+    "start": "vite",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint ."
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.3",
